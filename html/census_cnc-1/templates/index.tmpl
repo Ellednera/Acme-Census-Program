@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <!-- besiyata d'shmaya -->
+  <head>
+    <title>Acme Census Program</title>
+  </head>
+    <link href="http://192.168.0.190/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://192.168.0.190/census_cnc-1/templates/css/style.css" rel="stylesheet" type="text/css">
+  <body>
+    <div class="background-tile">
+      <div class="container">
+        <h2>Acme Census Program</h2>
+        
+        <tmpl_if name="no_census_data">
+          <div class="row">
+            <p style="text-align: center;">You do not have any census data yet~</p>
+          </div>
+        </tmpl_if>
+
+        <!-- button to create a new census -->
+        <form action="http://192.168.0.190/cgi-bin/acme_census/create_census.cgi" method="POST">
+          <div class="row">
+            <button type="submit" class="btn btn-primary new-census">New Census</button>
+          </div>
+        </form>
+
+        <!-- buttons for accessing census data -->
+        <form action="http://192.168.0.190/cgi-bin/acme_census/use_census_file.cgi" method="POST">
+          <tmpl_loop name="census_data">
+            <div class="row">
+              <button 
+                type="submit" value="an_id_or_something"
+                class="btn btn-success census-data">
+                <tmpl_var name="census_name">
+              </button>
+            </div>
+          </tmpl_loop>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

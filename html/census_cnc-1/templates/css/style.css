@@ -1,0 +1,21 @@
+div.background-tile {
+  width: 80%;
+  margin: 30px auto;
+  padding: 5% 2%;
+  background-color: #E8F2A1;
+}
+
+h2 {
+  text-align: center;
+}
+
+a.link.link-primary.new-census {
+  margin: 0 auto;
+}
+
+button.btn.btn-success.census-data,
+button.btn.btn-primary.new-census {
+  width: 50%;
+  max-width: 60%;
+  margin: 5px auto;
+}
