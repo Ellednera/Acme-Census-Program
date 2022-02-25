@@ -25,7 +25,7 @@ print $cgi->header( -type => "text/html", -charset => "utf-8" );
 #print "你好";
 
 # process dynamic data
-opendir my $census_fh, $local_storage_path or die "$@";
+opendir my $census_fh, $local_storage_path or die "$!";
 my @census_data = grep { $_ !~ /^\./ && -d "$local_storage_path/$_" } readdir $census_fh;
 close $census_fh;
 
