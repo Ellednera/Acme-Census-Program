@@ -1,5 +1,5 @@
 # Acme-Census-Program
-A General Census Program Created for Fun
+A General Census Program Created for Fun and for the CodeNewbie "Start Coding" Challenge
 
 # External Modules Required
 - CGI
