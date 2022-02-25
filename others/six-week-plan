@@ -1,0 +1,27 @@
+Coding Plan
+
+Project Name: Generic Census Program
+
+Week 1 - 21/2-27/2
+  - create census creation page
+    - default html page, processing use CGI
+  - save state
+  - load census data
+
+Week 2 - 28/2-6/3
+  - census data adding
+    - single data field
+  - census data deletion
+
+Week 3 - 7/3-13/3
+  - census data editing feature
+
+Week 4 - 14/3-20/3
+  - census data adding - multiple, automatic id etc
+
+Week 5 - 21/3-27/3
+  - turn into loginable web page
+
+Week 6 - 28/3-4/4
+  - tidy up
+

@@ -1,0 +1,80 @@
+Name: Generic Census Program
+Main Language: Perl
+Tools: CGI, Apache
+Development Environment: Linux
+
+CGI path: /usr/lib/cgi-bin/acme-census
+Local storage: /home/raphael/Desktop/apache2/acme-census
+
+Structure of local storage: 
+under acme-census dir, there will be a directory for each census. This directory 
+will contain the actual census data in YAML format and some more directories for 
+future expansion eg a "pictures" directory etc.
+
+The acme-census directory's will be read and the sub-directories will be the name 
+of the census data. We'll just allow spaces for the moment. This also means that
+you can create the directories manually and see them being present as census data
+in the web app.
+
+Features
+
+1. Default Home Page
+For first time user, this will include only a "Create Census" button or 
+something similar.
+
+After creating the census, all the stuff will be saved into a file locally.
+Data in this file needs to be save manually through the web page by clicking 
+the save data button or something. This is a local web app though :) It will be
+treated like an actual app. This means that you really shouldn't use XAMPP or 
+any other one-stop station app to contorl your Apache server. Windows users
+might have an issue with this, sorry.
+
+After that, the usr will be shown the same home page, but this time with the 
+created census name. Now we will have a list of census data that can be clicked.
+After clicking one of the listed census data/link, the user will be brought to
+the general details or maybe a summary page of the census. See next feature 
+(Feature 2)
+
+2. Census Summary Page
+This is where the general details or maybe just the summary of what the cesus 
+might contain.
+There will be a list/table of data indicating each record.
+If there is no record, a message will be shown and a button for adding records
+will always be present.
+
+Example: A bakery shop owner might create a census for all the recipes used in 
+his bakery. This page will list out each recipe recorded before. There will 
+be a button or link for each recipe which will send the suer to the specific 
+recipe details page. (See Feature 3)
+
+3. Census Item Details Page
+This page contains the specific details of the items after it is clicked in 
+the summary page (Feature 2)
+There will be some buttons--add details, delete details, edit details and 
+save details.
+Each line of detail will be in the form of key-value pair format which makes 
+perfect sense. 
+Notes: All actions will be processed in this single page.
+Example: The bakery owner mentioned above wants to add details for his 
+pizza. All he needs to do is just click on add details and start typing.
+He decides to add the time needed to serve, ingredients, and recommended price.
+He will have to add them as three separate fields.
+
+For the first click on the add details button, the baker enters "Time to Serve"
+as the key while he enters "50 minutes" as the value.
+
+For the second click, he enters "Ingredients" as the key, while he types in all the ingredients as the value. If the space is not enough, he can resize the 
+value field. The value field will be a textarea in order to make this happen.
+
+The same goes for the third click for the recommedned price. 
+
+The edit feature will either allow the user to edit all details in one go or 
+maybe just a specific row of detail. The same goes to the delete button.
+(To be finalized)
+
+(Image upload will be considered in the future)
+(Automatic assignmet of ID will be supported in the future)
+
+
+
+
