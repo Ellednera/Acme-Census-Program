@@ -7,7 +7,7 @@ A General Census Program Created for Fun
 - HTML::Template
 
 # Server Program
-Apache2
+Apache2 (reconfigured to run as a normal user)
 
 # Other Tools Used
 - Bootstrap
@@ -23,3 +23,6 @@ All data will be stored in YAML format. It's easy to read :)
 
 # Operating System
 This web app is created under Linux, Windows users might have to do a little bit of tweaking to make the app work correctly
+
+# Other Notes
+The *other* directory might contain some useful stuff.
