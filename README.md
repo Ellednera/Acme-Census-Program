@@ -25,4 +25,4 @@ All data will be stored in YAML format. It's easy to read :)
 This web app is created under Linux, Windows users might have to do a little bit of tweaking to make the app work correctly
 
 # Other Notes
-The *other* directory might contain some useful stuff.
+The *others* directory might contain some useful stuff.
