@@ -6,6 +6,9 @@ A General Census Program Created for Fun
 - CGI::Carp
 - HTML::Template
 
+# Server Program
+Apache2
+
 # Local Storage
 This web app pulls data from local file system instead of a database because there's really no need for a database :)
 
