@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <!-- besiyata d'shmaya -->
+  <head>
+    <title>Acme Census Program</title>
+  </head>
+    <link href="http://192.168.0.190/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="http://192.168.0.190/census_cnc-1/templates/css/style.css" rel="stylesheet" type="text/css">
+  <body>
+    <div class="background-tile">
+      <div class="container">
+        <h2>Acme Census Program</h2>
+        
+        <br>
+        <!-- Census Creation Form -->
+        <form action="http://192.168.0.190/cgi-bin/acme_census/create_census.cgi" method="POST"
+          class="create-census-form">
+          <h5>Create New Census</h5>
+
+          <input 
+            class="form-control census-name" 
+            type="text" name="cencus_name" 
+            placeholder="Census Name" 
+            required>
+          <div class="row">
+            <button type="submit" class="btn btn-success create-census">Create Census</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>
