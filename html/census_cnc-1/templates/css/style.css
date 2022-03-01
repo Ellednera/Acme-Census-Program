@@ -5,8 +5,12 @@ div.background-tile {
   background-color: #E8F2A1;
 }
 
-h2 {
+h2, h5 {
   text-align: center;
+}
+
+h5 {
+  font-weight: bold;
 }
 
 a.link.link-primary.new-census {
@@ -14,8 +18,26 @@ a.link.link-primary.new-census {
 }
 
 button.btn.btn-success.census-data,
-button.btn.btn-primary.new-census {
+button.btn.btn-primary.new-census,
+button.btn.btn-success.create-census,
+input.form-control.census-name {
   width: 50%;
   max-width: 60%;
   margin: 5px auto;
 }
+
+form.create-census-form {
+  border: 2px solid #7FBB4C; /* darker lime green */
+  background-color: #B9DF9A; /* light lime green */
+  width: 75%;
+  margin: 10px auto;
+  padding: 25px 10px;
+}
+
+input.form-control.census-name {
+  text-align: center;
+  font-style: italic;
+  margin: 20px auto;
+}
+
+
